@@ -7,8 +7,8 @@ Prerequisites:
     bearer_token=<token> in .env  (or BEARER_TOKEN as env var)
     pip install -r requirements.txt
 
-Estimated cost:  ~5,000 reads / ~$25 (retweet expansions bill ~3x per timeline tweet)
-Estimated time:  ~2.5 hours (15 s/page × 13 accounts)
+Estimated cost:  ~13,000 reads / ~$25 (retweet expansions bill ~3x per timeline tweet)
+Estimated time:  ~2 minutos (15 s/page × 13 accounts)
 
 WARNING: The output file will be OVERWRITTEN on each run.
 """
