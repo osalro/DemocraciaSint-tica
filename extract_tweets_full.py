@@ -2,19 +2,12 @@
 Reproducibility script — Fetches all image-tweets from 13 candidate/party accounts
 for the full campaign window (Jul 1 2025 – Feb 1 2026) in a single run.
 
-Produces data/deliverables/tweets_raw_extraction.csv with the same schema as
-d3_tweets_tweet_level.csv. The existing D3 deliverable is NOT touched.
-
-Usage:
-    python src/01_extraction/extract_tweets_full.py            # full run
-    python src/01_extraction/extract_tweets_full.py --dry-run  # cost estimate only
-
 Prerequisites:
     bearer_token=<token> in .env  (or BEARER_TOKEN as env var)
     pip install -r requirements.txt
 
-Estimated cost:  ~5,000 reads / ~$25 (Basic tier)
-Estimated time:  ~2.5 hours (15 s/page × 13 accounts)
+Estimated cost:  ~13,000 reads / ~$25 (pay per use) 
+Estimated time:  ~2 minutes (15 s/page × 13 accounts)
 
 WARNING: The output file will be OVERWRITTEN on each run.
 """
